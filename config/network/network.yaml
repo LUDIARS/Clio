@@ -1,0 +1,40 @@
+# Clio Network Configuration
+# IPFS-like content-addressed storage + Torrent-style P2P transfer
+
+# Content Store Settings
+storage:
+  # Path for block storage (default: ~/.clio/blocks)
+  store_path: null
+  # Chunk size in bytes (default: 256KB)
+  chunk_size: 262144
+  # Hash algorithm: sha256 or blake2b
+  hash_algorithm: "sha256"
+
+# Peer Management
+peers:
+  # Maximum number of tracked peers
+  max_peers: 200
+  # Number of gossip propagation targets
+  max_gossip_peers: 8
+
+# Transfer Settings (Torrent-like)
+transfer:
+  # Piece selection strategy: rarest_first, sequential, random
+  default_strategy: "rarest_first"
+  # Maximum concurrent piece requests per transfer
+  max_concurrent_requests: 10
+  # Piece request timeout in seconds
+  request_timeout: 30.0
+
+# Streaming Settings
+streaming:
+  # Number of pieces to buffer ahead of read position
+  buffer_ahead: 8
+
+# Bootstrap Peers
+# Initial peers to connect to for network discovery
+bootstrap_peers: []
+  # - host: "192.168.1.10"
+  #   port: 4001
+  # - host: "10.0.0.5"
+  #   port: 4001
