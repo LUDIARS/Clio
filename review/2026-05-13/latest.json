@@ -1,0 +1,32 @@
+{
+  "date": "2026-05-13",
+  "repo": "Clio",
+  "weighted_score": 41,
+  "scores": {
+    "architecture": "B",
+    "code_design": "D",
+    "security": "D",
+    "performance": "C",
+    "error_handling": "D",
+    "testing": "D",
+    "documentation": "C",
+    "dependencies": "D",
+    "api_design": "B",
+    "data_model": "C",
+    "concurrency": "D",
+    "observability": "D",
+    "i18n": "C",
+    "ludiars_integration": "C"
+  },
+  "critical_count": 0,
+  "high_count": 5,
+  "autofix_count": 0,
+  "autofix_categories": {
+    "formatting": 0,
+    "typo": 0,
+    "lint": 0,
+    "doc_skeleton": 0,
+    "security_simple": 0
+  },
+  "fix_pr": null
+}
